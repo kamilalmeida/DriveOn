@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/gsap@3.9.0/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.22/bundled/lenis.min.js"></script>
+
+</head>
+
+<script>
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+    })
+
+    lenis.on('scroll', (e) => {
+        // console.log(e)
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
+
+<title>DriveOn</title>
+</head>
+
+<body>
+    <header>
+        <div class="navigation">
+            <img src="./assets/logo-teste-programador.png" width="185" height="54" class="logo" alt="Logo DriveOn">
+            <nav class="nav">
+                <a href="#">Drivers</a>
+                <a href="#">Passengers</a>
+                <a href="#">About us</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+        <div class="buttons">
+            <img src="./assets/icone-login-teste-programador.png" alt="icone de usuário">
+            <button class="login-btn">Log in</button>
+            <button class="logout-btn">Sing Up</button>
+        </div>
+    </header>
+    <main>
+        <div class="content">
+            <div class="content-left">
+                <h1 class="title-1">
+                    Start Your<br>
+                    Workday<br>
+                    Comfortably
+                </h1>
+                <p>
+                    Get in, sit back and experience the comfort of car<br>
+                    that takes you directly to your destination.<br>
+                    Arriving work as a sardine with public transport or<br>
+                    sweating is a thing of the past.
+
+                </p>
+                <button class="button">Discover</button>
+            </div>
+            <div class="content-right">
+                <img src="./assets/img-banner-teste-programador.png" class="image-main" alt="">
+            </div>
+        </div>
+    </main>
+
+    <section class="section-cards animated-element ">
+        <div>
+            <img src="./assets/linha-reta-teste-programador.png.jpg" class="linha" alt="">
+            <h2>How to get started</h2>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <img src="./assets/solucao-1-teste-programador.png" alt="Imagem 1">
+                <p class="title">Create your</br> account</p>
+                <p>
+                    Complete your account<br>
+                    with some basic information<br>
+                    including your home<br>
+                    your work location and<br>
+                    your working hours.
+
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/solucao-2-teste-programador.png" alt="Imagem 2">
+                <p class="title">Plan your<br> journeys</p>
+                <p>
+                    Open the app<br>
+                    click the agenda tab<br>
+                    and ever your working hours<br>
+                    for the coming week<br>.
+                    Then you'll be presented<br>
+                    with a list of our drivers.
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/solucao-3-teste-programador.png" alt="Imagem 3">
+                <p class="title">Meet your<br> driver</p>
+                <p>
+                    Use our chat to get know<br>
+                    your match with our driver.<br>
+                    You'll be picked up at<br>
+                    your regular location<br>
+                    or agree on an alternative<br>
+                    pick-up location.
+
+
+                </p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/solucao-3-teste-programador.png" alt="Imagem 3">
+                <p class="title">Enjoy your<br>journey</p>
+                <p>
+                    Get in, sit back<br>
+                    and enjoy your directly<br>
+                    to your destination<br>
+                    with some free<br>
+                    cup of coffee from us.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container ">
+            <img src="./assets/img-fundo-teste-programador.png" class="imageLeft animated-element">
+            <div class="text animated-element">
+                <img src="./assets/linha-reta-teste-programador.png.jpg" class="linha" alt="">
+                <p>
+                    DriveOn is a mobile carpool plataform that effortlessly<br>
+                    brings commuters together is one car.<br>
+                    Taveling home and work will never be them same again.<br>
+                    Our mission is to stop traffic jams and CO2 pollution<br>
+                    as a result of inefficient car
+                    commuting.<br><br>
+
+                    Are you in?<br><br>
+
+                    <a href="">Learn more >></a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="containerRight animated-element">
+            <img src="./assets/img-fundo-2-teste-programador.png" alt="" class="imageRight">
+            <div class="text-containerRight">
+                <img src="./assets/linha-reta-teste-programador.png.jpg" class="linha" alt="">
+                <h2>
+                    Our commitment<br>
+                    to your safety
+                </h2>
+                <p>
+                    With every safety feature we add<br>
+                    and every standart in the Community Guide that we uphold,<br>
+                    we are committed to protecting you throughout the journey.<br>
+                    Learn more about our Community Guide
+                    <span style="color: #5712a6;font-weight: bold;">
+                        here.
+                        <img src="./assets/linha-reta-teste-programador.png.jpg" class="line" alt="">
+                    </span>
+                    <br><br>
+
+                    <a href="">See all safety features >></a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-3 animated-element">
+
+        <div class="driveon-store">
+            <img src="./assets/img-fundo-4-teste-programador.png" alt="">
+
+            <div class="btn-store">
+                <h2>
+                    Download the DriveOn application<br>
+                    to get more benefits and experience
+                </h2>
+                <div class="button-store">
+                    <button class="btn-store1">
+                        <img src="./assets/icone-store1.png" alt="" width="27" height="27">
+                        GET IT ON<br>
+                        Clay Store
+                    </button>
+                    <button class="btn-store2">
+                        <img src="./assets/icone-store2.png" alt="" width="27" height="27">
+                        Download on the<br>
+                        Play APP
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="register animated-element">
+            <div class="register-1">
+                <p>Register to be<br> a driver partner</p>
+                <img src="./assets/linha-reta-teste-programador.png.jpg" class="linha" alt="linha divisoria">
+
+            </div>
+            <img src="./assets/setas-teste-programador.png" class="seta" width="40" height="50" alt="seta">
+
+            <div class="register-1">
+                <p>Register to start<br> your journey</p>
+                <img src="./assets/linha-reta-teste-programador.png.jpg" class="linha" alt="">
+            </div>
+            <img src="./assets/setas-teste-programador.png" class="seta" width="40" height="50" alt="seta">
+        </div>
+    </section>
+
+    <footer class="footer animated-element">
+        <img src="./assets/fundo-footer-teste-programador.png.jpg" alt="">
+
+        <div class="blocks-footer ">
+
+            <div class="column-1">
+                <ul>
+                    <li>
+                        <img src="./assets/driveon.png" width="92" height="24" alt="">
+                    </li>
+
+                    <li>
+                        <img src="./assets/duvidas.png" alt="">
+                        Resolution Center
+                    </li>
+
+                    <li>
+                        <img src="./assets/mensagem.png" alt="">
+                        English
+                    </li>
+                </ul>
+            </div>
+            <div class="column-2">
+                <ul>
+                    <li class="title">About Us</li>
+                    <li>Newsroom</li>
+                    <li>Investor relations</li>
+                    <li>Global citizenship</li>
+                    <li>Safety</li>
+                    <li>Blog</li>
+                    <li>Career</li>
+                </ul>
+            </div>
+
+            <div class="column-3">
+                <ul>
+                    <li class="title">Our product</li>
+                    <li>Take a trip</li>
+                    <li>Drive it</li>
+                    <li>Eats</li>
+                    <li>DriveOn for Business</li>
+                    <li>DriveOn Freight</li>
+                    <li>Health</li>
+                    <li>DriveOn Air</li>
+                    <li>Advanced Technogies Group</li>
+                </ul>
+            </div>
+        </div>
+        <div class="social">
+            <span class="border-footer"></span>
+            <div class="elements-footer">
+                <p>@2024 DriveOn Technogies Inc.</p>
+                <img src="./assets/rede-social.png" alt="icones de redes sociais">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+<script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".animated-element").forEach(element => {
+        gsap.from(element, {
+            opacity: 0,
+            y: 20,
+            filter: "blur(10px)",
+            scrollTrigger: {
+                trigger: element,
+                start: "top 80%",
+                end: "bottom 100%",
+                scrub: true,
+                onUpdate: (self) => {
+                    document.body.style.overflow = "hidden";
+                }
+            }
+
+        });
+    });
+
+</script>
