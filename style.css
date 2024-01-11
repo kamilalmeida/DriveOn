@@ -517,7 +517,7 @@ span.border-footer {
     .content-left h1,
     .section-cards h2,
     .text-containerRight h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .content-left {
@@ -527,8 +527,9 @@ span.border-footer {
     .content-left p,
     .text-containerRight p {
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.5;
+        padding-right: 46px;
     }
 
     .content-right img {
@@ -547,33 +548,110 @@ span.border-footer {
 
     .containerRight {
         flex-direction: column;
+        align-items: flex-end;
     }
 
-    img.imageRight {
+    img.imageRight,  img.imageLeft {
 
-        width: 100%;
+        width: 50%;
     }
+
+    .text {
+        margin-top: -18rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+
 
     .text-containerRight {
         margin: 10rem 0 5rem 2rem;
         margin-right: 0;
-        margin-top: 10rem;
+        margin-top: -8em;
     }
+
     .btn-store h2 {
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     .button-store {
         flex-direction: column;
         gap: 10px;
+        padding: 0;
     }
 
     .btn-store button {
-        width: 140px;
-        height: 35px;
-        font-size: .7rem;
+        width: 100px;
+        height: 25px;
+        font-size: .5rem;
     }
 
+    .btn-store1 img,
+    .btn-store2 img {
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+
+    .btn-store {
+        top: 54%;
+        left: 92%;
+    }
+
+    .register {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .register p {
+        font-size: 2rem;
+    }
+
+    .blocks-footer {
+        grid-template-columns: 1fr;
+        gap: 0;
+        top: -1rem;
+    }
+
+    .column-1,
+    .column-2,
+    .column-3 {
+        font-size: .9rem;
+        line-height: 1.7;
+    }
+
+    .column-3 {
+        margin: 0;
+        padding-bottom: 10rem;
+    }
+
+    .elements-footer {
+        flex-direction: column;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    .elements-footer p {
+        font-size: .8rem;
+    }
+
+    .social {
+        width: 80%;
+        background-color: #5711a5;
+    }
+
+    span.border-footer {
+        border-top: 1px solid #ffffff3f;
+    }
+
+    .line {
+        left: -2.9rem;
+        width: 38px;
+        height: 6px;
+    }
 }
 
 @media(min-width: 1025px) and (max-width:1366px) {
