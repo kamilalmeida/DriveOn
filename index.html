@@ -11,30 +11,6 @@
 
 </head>
 
-<script>
-    const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        orientation: 'vertical',
-        gestureOrientation: 'vertical',
-        smoothWheel: true,
-        wheelMultiplier: 1,
-        smoothTouch: false,
-        touchMultiplier: 2,
-        infinite: false,
-    })
-
-    lenis.on('scroll', (e) => {
-        // console.log(e)
-    })
-
-    function raf(time) {
-        lenis.raf(time)
-        requestAnimationFrame(raf)
-    }
-
-    requestAnimationFrame(raf)
-</script>
 
 <title>DriveOn</title>
 </head>
@@ -44,10 +20,15 @@
         <div class="navigation">
             <img src="./assets/logo-teste-programador.png" width="185" height="54" class="logo" alt="Logo DriveOn">
             <nav class="nav">
-                <a href="#">Drivers</a>
-                <a href="#">Passengers</a>
-                <a href="#">About us</a>
-                <a href="#">Contact</a>
+                <button id="btn-mobile">
+                    <span id="hamburger"></span>
+                </button>
+                <div id="menu">
+                    <a href="#">Drivers</a>
+                    <a href="#">Passengers</a>
+                    <a href="#">About us</a>
+                    <a href="#">Contact</a>
+                </div>
             </nav>
         </div>
         <div class="buttons">
@@ -71,7 +52,9 @@
                     sweating is a thing of the past.
 
                 </p>
-                <button class="button">Discover</button>
+                <div class="animation">
+                    <button class="button">Discover</button>
+                </div>
             </div>
             <div class="content-right">
                 <img src="./assets/img-banner-teste-programador.png" class="image-main" alt="">
@@ -288,7 +271,30 @@
 
 </html>
 
+<script>
+    const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        orientation: 'vertical',
+        gestureOrientation: 'vertical',
+        smoothWheel: true,
+        wheelMultiplier: 1,
+        smoothTouch: false,
+        touchMultiplier: 2,
+        infinite: false,
+    })
 
+    lenis.on('scroll', (e) => {
+        // console.log(e)
+    })
+
+    function raf(time) {
+        lenis.raf(time)
+        requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+</script>
 <script>
     gsap.registerPlugin(ScrollTrigger);
 
@@ -311,3 +317,4 @@
     });
 
 </script>
+<script src="index.js"></script>
