@@ -551,13 +551,17 @@ span.border-footer {
         align-items: flex-end;
     }
 
-    img.imageRight,  img.imageLeft {
+    img.imageRight,
+    img.imageLeft {
 
         width: 50%;
     }
 
     .text {
-        margin-top: -18rem;
+        position: relative;
+        top: -60%;
+        left: -9%;
+        margin: 0;
     }
 
     .text p {
@@ -654,6 +658,83 @@ span.border-footer {
     }
 }
 
+@media (min-width:501px)and (max-width:768px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .text-containerRight {
+        margin-right: 7rem;
+        margin-top: -14rem;
+
+    }
+
+}
+
+@media (min-width:769px)and (max-width:1024px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .text-containerRight {
+        margin: 0 0 -27rem 3rem;
+
+    }
+
+    .content-left {
+        padding-left: 2rem;
+    }
+
+    .content-right img {
+        width: 530px;
+    }
+
+    img.imageLeft {
+        width: 500px;
+    }
+
+    .text {
+        position: absolute;
+        left: 50%;
+        top: 47%;
+    }
+
+    .text p {
+        font-size: 1.3rem;
+        width: 450px;
+    }
+
+    img.imageRight {
+        width: 500px;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn-store {
+        left: 93%;
+    }
+    .register{
+        gap:70px;
+    }
+    .column-1, .column-2, .column-3 {
+        font-size: 1rem;
+        line-height: 2.1;
+    }
+    .elements-footer{
+        gap: 22rem;
+    }
+    .elements-footer p{
+        font-size: .6rem;
+    }
+}
+
+
 @media(min-width: 1025px) and (max-width:1366px) {
 
     .content-left h1 {
@@ -711,5 +792,17 @@ span.border-footer {
 
     li.title {
         font-size: 1.4rem;
+    }
+
+    .social p {
+        font-size: .9rem;
+    }
+
+    .line {
+        position: relative;
+        top: 1rem;
+        left: -3.1rem;
+        width: 42px;
+        height: 7px;
     }
 }
